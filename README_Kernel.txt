@@ -1,8 +1,11 @@
 ################################################################################
-1. How to Build
+1. Download and unzip the kernel source of P625XXU1AXBC.
+
+2. Unzip and update the kernel source of P625XXU2AXE7.
+
+3. How to Build
         - get Toolchain
                 get the proper toolchain packages from AOSP or CodeSourcery or ETC.
-                (Download link : https://opensource.samsung.com/uploadSearch?searchValue=toolchain )                
 
         - edit Makefile
                 edit "CROSS_COMPILE" to right toolchain path(You downloaded).
@@ -26,10 +29,10 @@
                 $ make s5e8825-gta4xlsxx_defconfig
                 $ make
 
-2. Output files
+4. Output files
         - Kernel : arch/arm64/boot/Image
         - module : drivers/*/*.ko
 
-3. How to Clean
+5. How to Clean
         $ make clean
 ################################################################################
